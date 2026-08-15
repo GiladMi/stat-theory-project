@@ -11,6 +11,7 @@ library(here)
 library(broom)
 library(caret)
 library(pROC)
+library(vcd)
 
 pipeline_scripts <- c(
   "001_import.R",

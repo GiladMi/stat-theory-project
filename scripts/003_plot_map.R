@@ -116,7 +116,7 @@ plot <- ggplot() +
     x = "Easting (ITM Meters)",
     y = "Northing (ITM Meters)"
   ) +
-  theme_minimal() +
+  theme_bw() +
   theme(
     panel.background = element_rect(fill = "#f2f4f4", color = NA),
     plot.title = element_text(face = "bold", size = 14, color = "#2c3e50"),

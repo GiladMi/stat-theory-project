@@ -160,7 +160,8 @@ assoc_mat <- matrix(NA, nrow = n_vars, ncol = n_vars, dimnames = list(cor_vars, 
 for (i in 1:n_vars) {
   for (j in 1:n_vars) {
     tbl <- table(data_clean[[cor_vars[i]]], data_clean[[cor_vars[j]]])
-    assoc_mat[i, j] <- assocstats(tbl)$cramer
+    assoc_mat[i, j] <- ifelse(assocstats(tbl)$chisq_tests[2,3] < 0.05,
+                              assocstats(tbl)$cramer, 0)
   }
 }
 
