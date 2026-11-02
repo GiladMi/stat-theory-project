@@ -2,6 +2,12 @@
 
 This repository serves for the submission of the final project in the statistical theory course (868877501)
 
+<p align="center">
+  <img width="460" src="./assets/accident_heatmap.png">
+</p>
+
+For the full article and conclusions, [the final report is available](https://github.com/GiladMi/stat-theory-project/blob/master/assets/Report.pdf)
+
 ## Build Instruction
 
 ### Prerequisites
